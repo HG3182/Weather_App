@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1b1b1b; /* Light blue-gray */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.circle_1{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    background: linear-gradient(135deg, #6200ff 0%, #ea55fb 100%); /* Gradient color */
+    clip-path: circle(50%); /* Make circle shape */
+    z-index: -1;
+}
+
+.circle_2{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    background: linear-gradient(135deg, #6200ff 0%, #ea55fb 100%); /* Gradient color */
+    clip-path: circle(50%); /* Make circle shape */
+    z-index: -1;
+}
+
+
+.card {
+    background-color: rgba(220, 251, 249, 0.222); /* Semi-transparent white */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Shadow effect */
+    max-width: 400px;
+    width: 90%;
+    margin: 20px;
+}
+
+h1 {
+    color: #ffffff; /* Deep blue color */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* Adjusting for padding */
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #c5d2e4; /* Light blue border */
+    background-color: #f0f5f9; /* Light blue-gray */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #55a0fb; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(85, 160, 251, 0.3); /* Blue outline on focus */
+}
+
+button {
+    padding: 14px 30px;
+    background-color: #0800ff; /* Blue color */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #1c63fd; /* Lighter blue color on hover */
+}
+
+#weatherInfo {
+    color: whitesmoke;
+}
